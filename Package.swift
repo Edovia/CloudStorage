@@ -15,7 +15,12 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "CloudStorage"),
+        .target(
+            name: "CloudStorage",
+            dependencies: [],
+            path: "Sources",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
+        )
     ]
 )
 
